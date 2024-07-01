@@ -102,6 +102,7 @@ class Dashboard extends CI_Controller {
 
 	public function edituser($id)
 	{
+		// $this->from_validaiton->set_rules('name','Name', 'required', ['required' => '%s Harus Diisi']);
 		$data = array(
 			'judul' => 'Edit User',
 			'user' => $this->User->detail_data($id),
